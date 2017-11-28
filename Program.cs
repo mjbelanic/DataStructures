@@ -39,8 +39,8 @@ namespace DataStructures
             myList.PrintList();
             myList.DeleteWithValue(removedValue);
             myList.PrintList();
-
             Console.WriteLine("");
+
 
             Console.WriteLine("Queue Example");
             Console.WriteLine("=============");
@@ -59,16 +59,14 @@ namespace DataStructures
                 int topValue = myQueue.Remove();
                 Console.Write(topValue + " ");
             }
+            Console.WriteLine("");
+            Console.WriteLine("");
 
-            Console.WriteLine("");
-            Console.WriteLine("");
 
             Console.WriteLine("Stack Example");
             Console.WriteLine("=============");
-
             Stack myStack = new Stack();
             Console.WriteLine("The stack is empty: " + myStack.IsEmpty());
-            
             for (int i = 0; i < 5; i++)
             {
                 int value = random.Next(1, 100);
@@ -82,10 +80,18 @@ namespace DataStructures
             {
                 Console.Write(myStack.Pop() + " ");
             }
-
+            Console.WriteLine("");
             Console.WriteLine("");
 
- 
+
+            Console.WriteLine("Min Heap Example");
+            Console.WriteLine("================");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+
+            Console.WriteLine("Max Heap Example");
+            Console.WriteLine("================");
 
 
             Console.ReadLine();
