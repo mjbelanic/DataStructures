@@ -55,7 +55,5 @@ namespace DataStructures
             }
             return data;
         }
-
-
     }
 }

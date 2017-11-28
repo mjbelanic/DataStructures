@@ -9,6 +9,20 @@ namespace DataStructures
         {
             Random random = new Random();
 
+            Console.WriteLine("Binary Search Tree Example");
+            Console.WriteLine("==========================");
+            BSTNode tree = new BSTNode(50);
+            tree.InsertNode(75);
+            tree.InsertNode(25);
+            tree.InsertNode(100);
+            tree.InsertNode(0);
+            Console.WriteLine("Tree contains 25: " + tree.ContainsNode(25));
+            Console.WriteLine("Tree contains 10: " + tree.ContainsNode(10));
+            tree.PrintInOrder();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
             Console.WriteLine("Linked List Example");
             Console.WriteLine("===================");
             LinkedList myList = new LinkedList();
@@ -20,7 +34,7 @@ namespace DataStructures
             myList.Append(random.Next(31, 41));
             myList.Append(random.Next(41, 51));
             myList.PrintList();
-            Console.WriteLine(myList.ListEmpty());
+            Console.WriteLine("The list is empty: " + myList.ListEmpty());
             myList.Prepend(0);
             myList.PrintList();
             myList.DeleteWithValue(removedValue);
@@ -31,7 +45,7 @@ namespace DataStructures
             Console.WriteLine("Queue Example");
             Console.WriteLine("=============");
             Queue myQueue = new Queue();
-            Console.WriteLine(myQueue.IsEmpty());
+            Console.WriteLine("The queue is empty: " + myQueue.IsEmpty());
             for (int i = 0; i < 10; i++)
             {
                 int value = random.Next(1, 101);
@@ -53,7 +67,7 @@ namespace DataStructures
             Console.WriteLine("=============");
 
             Stack myStack = new Stack();
-            Console.WriteLine(myStack.IsEmpty());
+            Console.WriteLine("The stack is empty: " + myStack.IsEmpty());
             
             for (int i = 0; i < 5; i++)
             {
